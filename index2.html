@@ -1,0 +1,41 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+
+  <meta name="theme-color" content="#fafafa">
+  <script type="text/javascript" src="js/vendor/vue.js"></script>
+</head>
+<body>
+
+<div id="app">
+  <p>{{ foo }}</p>
+  <!-- 这里的 `foo` 不会更新！ -->
+  <button v-on:click="foo = 'baz'">Change it</button>
+</div>
+
+  <script type = "text/javascript">
+    var data = { a: 1 };
+    var vm = new Vue({
+      el: '#example',
+      data: data
+    });
+    new Vue({
+      el: '#app',
+      data: obj
+    })
+  </script>
+</body>
+
+</html>
